@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+main {
+  padding: 0 !important;
+}
+.main__section {
+  background-image: url(../imagenes/imagen\ 4.jpg);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+}
+.blur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  background-color: rgba(200, 200, 200, .5);
+  width: 100%;
+}
+.main__section h1 {
+  margin-bottom: 2em;
+}
+.main__section p {
+  padding: 1em;
+  text-align: justify;
+}
+.main__aside {
+  background-image: url(../imagenes/imagen\ 3.jpg);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  padding: 0;
+}
+.main__aside h1 {
+  margin-bottom: 2em;
+}
+.main__aside p {
+  padding: 1em;
+  text-align: justify;
+}
+.main__gallery {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer {
+  background-color: aqua;
+}
+#carouselExampleCaptions {
+  display: flex;
+  align-items: center;
+  width: 50vw;
+  height: auto;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  margin-right: 1em;
+}
+@media screen and (max-width: 1024px) {
+  .main {
+    flex-direction: column-reverse !important;
+  }
+  .main__section {
+    height: 60vh;
+  }
+  .main__aside {
+    height: 40vh;
+    margin: 0;
+    min-width: 100vw !important;
+  }
+  .main__section h1 {
+    margin-bottom: 0;
+    
+  }
+  .main__aside h1 {
+    margin-bottom: 0;
+   
+  }
+}
+@media screen and (max-width: 630px) {
+  
+  .main__section h1 {
+    margin-bottom: 0;
+    transform: scale(.8);
+  }
+  .main__aside h1 {
+    margin-bottom: 0;
+    transform: scale(.8);
+  }
+  .main__aside p {
+    padding: 1em;
+    text-align: justify;
+    transform: scale(.8);
+  }
+  .main__section p {
+    padding: 1em;
+    text-align: justify;
+    transform: scale(.8);
+  }
+}
